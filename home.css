@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin:0px;
+}
+
+html, body{
+    height:100%;
+    font-family: 'Inter', sans-serif;
+    overflow-x:hidden;
+}   
+
+h1{ font-size:2.3rem;} h2{font-size:2rem} h3{font-size:1.7rem} p{font-size:1.5rem} a{text-decoration:none; color:black; font-size:1.3rem;} li{text-decoration:none;}
+
+
+/* header styling */
+
+
+
+
+/* nav styling */
+
+nav li{
+    display:inline-block;
+}
+
+.showcase{
+    background-image: url('images/showcase-image.jpg');
+
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    width:100%;
+    color:white;
+    background-size: cover;
+    min-height:65%;
+}
+
+header{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+    padding:1rem;
+}
+
+header .container{
+    display:grid;
+    grid-template-columns:10% 80% 10%;
+    justify-items:center;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+}
+
+.click-nav{
+    display:grid;
+    right:-500px;
+    padding:20px;
+    position:absolute;
+    padding-top:80px;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:center;
+    flex-grow:grow;
+    flex-shrink: 1;
+    gap:1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color:white;
+    overflow-x:hidden;
+    transition:1s;
+}
+
+.search-button{
+    width:300px;
+    color:white;
+    outline:none;
+    padding:4px 10px;
+    height:1.2rem;
+    background:none;
+    border-radius:20px;
+    border:1px solid rgb(246, 246, 246);
+    font-size:1.3rem;
+    text-align:center;
+    background-repeat:no-repeat;
+}
+
+
+#close-nav{
+    position:absolute;
+    top:2rem;
+    right: 5rem;
+}
+
+
+nav li{
+    padding: 10px 8px;
+}
+
+nav li a{
+    color:rgb(124, 237, 124);
+    font-weight: 900;
+    font-size:1.6rem;
+}
+
+#home{
+    width:55%;
+}
+.showcase-content{
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    justify-content:center;
+    line-height:2rem;
+    padding:0 2rem;
+    height:400px;
+    word-spacing: 3px;
+    letter-spacing:2px;
+    gap:1rem;
+    min-height:50%;
+}
+
+
+.nav-bar{
+    display:none;
+}
+
+@media (max-width:600px){
+    #home{
+        width:95%;
+        margin:auto;
+        padding:1rem;
+    }
+}
